@@ -65,6 +65,13 @@ function keyPressed() {
 		console.log("EE");
 	
 	}
+	
+	if (keyDown("LEFT_ARROW") && fairy.x < 520) {
+		fairy.x = fairy.x - 5
+		console.log("EE");
+	
+	}
+
 
 	if (keyDown("DOWN_ARROW") || keyDown("S")) {
 		Matter.Body.setStatic(starBody, false)	
